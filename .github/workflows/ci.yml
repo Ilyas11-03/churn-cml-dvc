@@ -26,8 +26,9 @@ jobs:
 
       - name: DVC pull
         env:
-          DAGSHUB_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
-          DAGSHUB_USERNAME: ${{ secrets.DAGSHUB_USERNAME }}
+          DAGSHUB_TOKEN: 442967408a5f9f936b6452c23dea0865ee5376b3
+          DAGSHUB_USERNAME: ilyas.aboulkassim
+          DAGSHUB_REPO: churn-cml-dvc
         run: |
           dvc remote modify origin url https://${DAGSHUB_USERNAME}:${DAGSHUB_TOKEN}@dagshub.com/${DAGSHUB_USERNAME}/${{ secrets.DAGSHUB_REPO }}.dvc
           dvc pull || echo "No remote cache yet"
