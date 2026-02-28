@@ -1,0 +1,7 @@
+core:
+    remote: origin
+'remote "origin"':
+    url: https://dagshub.com/ilyas.aboulkassim/churn-cml-dvc.dvc
+    auth: basic
+    user: ilyas.aboulkassim
+    password: 442967408a5f9f936b6452c23dea0865ee5376b3
